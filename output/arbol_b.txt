@@ -1,0 +1,200 @@
+└── perro
+    └── gato
+        └── león
+            └── elefante
+                └── ballena
+                    └── delfín
+                        └── alpaca
+                            └── alce
+                                └── abeja
+                                └── almeja
+                            └── antílope
+                                └── antílope saiga
+                                    └── anguila
+                                └── avestruz
+                                    └── avispa
+                                        └── araña
+                                            └── anémona de mar
+                                            └── atún
+                                    └── babosa
+                                        └── bacalao
+                                        └── bagre
+                    └── canguro
+                        └── chimpancé
+                            └── camello
+                                └── caballo
+                                    └── burro
+                                        └── búfalo
+                                            └── bison
+                                                └── buitre
+                                                └── buitrón
+                                        └── búho
+                                    └── cabra
+                                        └── calamar
+                                        └── camarón
+                                └── canario
+                                    └── cangrejo
+                        └── cocodrilo
+                            └── dromedario
+                                └── cebra
+                                    └── ciervo
+                                        └── caracol
+                                            └── carpa
+                                    └── cebra de grevy
+                                        └── cebra de montaña
+                                        └── cisne
+                                            └── ciempiés
+                            └── cóndor
+                                └── cuervo
+                                    └── colibrí
+                                        └── codorniz
+                                        └── cotorra
+                                            └── cucú
+                                                └── coral
+                                                    └── congrio
+                                    └── cuervo grande
+                                └── dorada
+                └── gacela
+                    └── emú
+                        └── flamenco
+                        └── faisán
+                            └── estornino
+                                └── escarabajo
+                                    └── escorpión
+                                        └── erizo de mar
+                                    └── esponja de mar
+                                └── estrella de mar
+                    └── ganso
+                        └── garza
+                            └── gallina
+                                └── gallo
+                                └── gambas
+        └── jirafa
+            └── oso
+                └── hipopótamo
+                    └── gorila
+                        └── guepardo
+                            └── gaviota
+                        └── halcón
+                            └── grulla
+                                └── gorrion
+                                    └── grillo
+                    └── jaguar
+                        └── hormiga
+            └── lobo
+                └── orca
+                    └── koala
+                        └── lagarto
+                        └── llama
+                            └── leopardo
+                                └── lechuza
+                                    └── lechuza común
+                                        └── langosta
+                                            └── langosta de agua dulce
+                                            └── langostino
+                                    └── lenguado
+                                └── libélula
+                └── panda
+                    └── mono
+                        └── oveja
+                            └── loro
+                                └── mirlo
+                                └── mariposa
+                                    └── mariquita
+                                        └── lubina
+                                            └── manta
+                                    └── mejillón
+                                        └── medusa
+                                        └── merluza
+                        └── paloma
+                            └── mosquito
+                                └── mosca
+                                    └── morena
+                                └── ostra
+                    └── pantera
+                        └── pato
+                        └── pelícano
+                            └── pavo real
+                                └── pavo
+                                    └── pardal
+                            └── perdiz
+                                └── pepino de mar
+    └── tigre
+        └── zorro
+            └── rinoceronte
+                └── serpiente
+                    └── reno
+                        └── puma
+                            └── pingüino
+                                └── piquituerto
+                                    └── picaflor
+                                        └── pez espada
+                                            └── pez globo
+                                                └── pez cirujano
+                                                    └── pez escorpión
+                                                        └── pez ballesta
+                                                            └── pez barbudo
+                                                                └── pez arcoíris
+                                                            └── pez beta
+                                                                └── pez betta splendens
+                                                    └── pez delfín
+                                                        └── pez cofre
+                                                            └── pez cíclido
+                                                            └── pez cola de espada
+                                                                └── pez danio
+                                                        └── pez diablo
+                                                            └── pez escorpión de agua dulce
+                                                            └── pez disco
+                                                                └── pez elefante
+                                            └── pez payaso
+                                                └── pez piedra
+                                                    └── pez león
+                                                        └── pez globo de agua dulce
+                                                            └── pez gato
+                                                                └── pez gato de agua dulce
+                                                            └── pez hacha
+                                                                └── pez lagarto
+                                                                    └── pez guppy
+                                                        └── pez mariposa
+                                                            └── pez luchador
+                                                                └── pez lápiz
+                                                                └── pez luchador de siam
+                                                            └── pez mero
+                                                                └── pez mariposa de agua dulce
+                                                                └── pez pavo real
+                                                                    └── pez monodactilo
+                                                └── pez ángel
+                                                    └── pez trompeta
+                                                        └── pez rana
+                                                            └── pez tamboril
+                                                                └── pez payaso de agua dulce
+                                                                    └── pez platino
+                                                            └── pez sapo
+                                                                └── pez tetra
+                                                        └── pez trompeta de agua dulce
+                                                            └── pez vela
+                                                    └── pez ángel de agua dulce
+                                                        └── pez ángel escalador
+                                                        └── pez ángel emperador
+                                └── pinzón
+                                    └── polilla
+                                    └── pulpo
+                                        └── piraña
+                            └── pájaro carpintero
+                                └── raya
+                └── ruiseñor
+                    └── termita
+                    └── saltamontes
+                        └── tiburón
+                            └── salmón
+        └── tortuga
+            └── venado
+                └── toro
+                    └── tortola
+            └── vaca
+                └── ñu
+                    └── tucán
+                        └── trucha
+                └── ñandú
+                    └── águila
+                        └── zopilote
