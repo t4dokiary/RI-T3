@@ -58,3 +58,11 @@ def eliminar_elemento(tabla_hash, elemento):
         return True
     else:
         return False
+
+
+def print_hash(tabla_hash_verbose):
+    for i, celda in enumerate(tabla_hash_verbose, start=1):
+        if celda is None:
+            print(f"Celda {i}: []")
+        else:
+            print(f"Celda {i}: {celda}")

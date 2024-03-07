@@ -106,3 +106,30 @@ def buscar_palabra(arbol, palabra, nodo=None, profundidad=0):
                 profundidad += 1
 
     return False, profundidad
+
+
+# Crear árbol B y leer palabras del archivo de animales
+arbol_animales = leer_archivo_y_construir_arbol('./input/animales.txt')
+
+# Mostrar el árbol en consola
+print("Árbol B de animales:")
+arbol_animales.imprimir()
+
+# Realizar consultas sobre palabras que existen y no existen en el árbol
+palabra_existente = "Pez Rana"
+palabra_no_existente = "unicornio"
+print('\n')
+encontrada, profundidad = buscar_palabra(arbol_animales, palabra_existente)
+if encontrada:
+    print(
+        f"La palabra '{palabra_existente}' existe en el árbol. Profundidad: {profundidad}")
+else:
+    print(f"La palabra '{palabra_existente}' no existe en el árbol.")
+
+encontrada, profundidad = buscar_palabra(arbol_animales, palabra_no_existente)
+if encontrada:
+    print(
+        f"La palabra '{palabra_no_existente}' existe en el árbol. Profundidad: {profundidad}")
+else:
+    print(f"La palabra '{palabra_no_existente}' no existe en el árbol.")
+print('\n')

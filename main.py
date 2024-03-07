@@ -1,48 +1,64 @@
 from src import archivo
 from src import hash
 from src import arbol_b
+import random
 
 
 if __name__ == "__main__":
-    # Ejemplo de uso
-    # Cambia esto por el nombre de tu archivo
     nombre_archivo = "./input/animales.txt"
     lista = archivo.leer_archivo_txt(nombre_archivo)
-    animals = lista
-    root = None
-    max_hijos = 4   # Cambiar este valor según tu preferencia
-
-    # Crear la tabla hash
-    # Al tamaño de la tabla hash se le da el tamaño de la lista de animales
+    random.shuffle(lista)
     tamano_tabla = len(lista)
     tabla_hash_verbose = hash.crear_tabla_hash_verbose(lista, tamano_tabla)
 
-    # Escribir la tabla hash en un archivo de texto
-    nombre_archivo = "tabla_hash_verbose.txt"
-    archivo.escribir_archivo_txt(tabla_hash_verbose, nombre_archivo)
+    print("Tabla hash:")
+    hash.print_hash(tabla_hash_verbose)
+    print('\n')
 
-    # Ejemplo de uso:
-    for animal in animals:
-        # Convertir a minúsculas antes de insertar
-        root = arbol_b.insert(root, animal.lower(), max_hijos)
-    archivo.print_tree_to_file(root, "./output/arbol_b.txt")
+    elemento_buscar = "Perro"
+    resultado_busqueda = hash.buscar_elemento(
+        tabla_hash_verbose, elemento_buscar)
+    if resultado_busqueda is not None:
+        print(
+            f"Elemento {elemento_buscar} encontrado en la celda {resultado_busqueda[0]+1}")
+    else:
+        print(f"Elemento {elemento_buscar} no encontrado en la tabla hash")
 
-    # Buscar un elemento
-    # elemento_buscar = "Perro"
-    # resultado_busqueda = hash.buscar_elemento(
-    #     tabla_hash_verbose, elemento_buscar)
-    # if resultado_busqueda is not None:
-    #     print(
-    #         f"Elemento {elemento_buscar} encontrado en la celda {resultado_busqueda[0]}")
-    # else:
-    #     print(f"Elemento {elemento_buscar} no encontrado en la tabla hash")
+    elemento_buscar = "unicornio"
+    resultado_busqueda = hash.buscar_elemento(
+        tabla_hash_verbose, elemento_buscar)
+    if resultado_busqueda is not None:
+        print(
+            f"Elemento {elemento_buscar} encontrado en la celda {resultado_busqueda[0]+1}")
+    else:
+        print(f"Elemento {elemento_buscar} no encontrado en la tabla hash")
+    print('\n')
 
-    # Eliminar un elemento
-    # elemento_eliminar = "Perro"
-    # resultado_eliminacion = hash.eliminar_elemento(
-    #     tabla_hash_verbose, elemento_eliminar)
-    # if resultado_eliminacion:
-    #     print(f"Elemento {elemento_eliminar} eliminado de la tabla hash")
-    # else:
-    #     print(
-    #         f"Elemento {elemento_eliminar} no encontrado en la tabla hash, no se pudo eliminar")
+    # Crear árbol B y leer palabras del archivo de animales
+    arbol_animales = arbol_b.leer_archivo_y_construir_arbol(
+        './input/animales.txt')
+
+    # Mostrar el árbol en consola
+    print("Árbol B de animales:")
+    arbol_animales.imprimir()
+
+    # Realizar consultas sobre palabras que existen y no existen en el árbol
+    palabra_existente = "Pez Rana"
+    palabra_no_existente = "unicornio"
+    print('\n')
+    encontrada, profundidad = arbol_b.buscar_palabra(
+        arbol_animales, palabra_existente)
+    if encontrada:
+        print(
+            f"La palabra '{palabra_existente}' existe en el árbol. Profundidad: {profundidad}")
+    else:
+        print(f"La palabra '{palabra_existente}' no existe en el árbol.")
+
+    encontrada, profundidad = arbol_b.buscar_palabra(
+        arbol_animales, palabra_no_existente)
+    if encontrada:
+        print(
+            f"La palabra '{palabra_no_existente}' existe en el árbol. Profundidad: {profundidad}")
+    else:
+        print(f"La palabra '{palabra_no_existente}' no existe en el árbol.")
+    print('\n')

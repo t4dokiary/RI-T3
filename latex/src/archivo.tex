@@ -1,0 +1,34 @@
+\section{Funcionamiento del programa archivo.py}
+\begin{minipage}{\textwidth}
+  El código incluye funciones para leer el contenido de un archivo de texto, escribir en archivos de texto y representar árboles de datos en formato legible. Estas funciones son útiles en una variedad de aplicaciones, desde el procesamiento de datos hasta la visualización de información estructurada.\newline
+  A lo largo de este documento, exploraremos cada una de estas funciones en detalle, comprendiendo su funcionamiento y cómo pueden ser utilizadas en diferentes escenarios de programación.\newline
+  Vamos a sumergirnos en el análisis de estas funciones y comprender cómo pueden ser integradas en proyectos de Python para manejar archivos de texto y estructuras de datos de manera efectiva.
+\end{minipage} 
+\subsection{Explicación de las funciones}
+\begin{itemize}
+  \item leer\_archivo\_txt:\newline Esta función abre el archivo de texto especificado por nombre\_archivo y lo lee línea por línea. Las líneas se agregan a una lista que luego se devuelve como resultado. Si el archivo no se encuentra, se lanza una excepción FileNotFoundError.
+  \item escribir\_archivo\_txt:\newline Esta función recibe una tabla hash y la escribe en un archivo de texto. El nombre del archivo se especifica como nombre\_archivo. La función recorre la tabla hash y escribe cada celda en una línea del archivo. Si una celda es None, se escribe una línea vacía.
+  \item print\_tree\_to\_file:\newline Esta función recibe un árbol y lo imprime en un archivo de texto. El nombre del archivo se especifica como filename. La función primero construye una representación del árbol en forma de lista. Luego, la representación del árbol se escribe en el archivo de texto.
+\end{itemize}
+\subsection{Variables de las funciones}
+
+Leer\_archivo\_txt:
+\begin{itemize}
+  \item Función:\newline Lee un archivo de texto y devuelve una lista con las líneas del archivo.
+  \item Parámetros:\newline nombre\_archivo: Ruta del archivo de texto a leer.
+  \item Retorno:\newline lista\_elementos: Lista con las líneas del archivo.
+\end{itemize}
+
+Escribir\_archivo\_txt:
+\begin{itemize}
+  \item Función:\newline Escribe una tabla hash en un archivo de texto.
+  \item Parámetros:\newline tabla\_hash\_verbose: Tabla hash a escribir.\newline nombre\_archivo: Nombre del archivo de texto a crear.
+  \item Acciones:\newline Recorre la tabla hash y escribe cada celda en una línea del archivo.\newline Si una celda es None, se escribe una línea vacía.
+\end{itemize}
+
+print\_tree\_to\_file:
+\begin{itemize}
+  \item Función:\newline Imprime un árbol en un archivo de texto.
+  \item Parámetros:\newline root: Nodo raíz del árbol.\newline filename: Nombre del archivo de texto a crear.
+  \item Acciones:\newline Construye una representación del árbol en forma de lista.\newline Escribe la representación del árbol en el archivo de texto.
+\end{itemize}

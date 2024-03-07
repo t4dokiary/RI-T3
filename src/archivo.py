@@ -33,6 +33,6 @@ def print_tree_to_file(root, filename):
     build_tree_representation(root)
 
     # Escribir la representación del árbol en el archivo de texto
-    with open(filename, 'w', encoding='utf-8') as file:
+    with open("./output/"+filename, 'w', encoding='utf-8') as file:
         for line in tree_representation:
             file.write(line + '\n')
